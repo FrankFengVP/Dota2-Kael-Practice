@@ -1,0 +1,73 @@
+<html ng-app='app'>
+
+<head>
+	<link rel="stylesheet" href="content/bootstrap.min.css">
+	<link rel="stylesheet" href="content/bootstrap-theme.min.css">
+	<script src="content/jquery.min.js"></script>
+	<script src="content/bootstrap.min.js"></script>
+	<script src="content/angular.js"></script>
+	<script src="content/angular-animate.min.js"></script>
+	<script src="main.js"></script>
+	<style>
+		.ng-enter {
+			-webkit-transition: 0.5s;
+			transition: 1.5s;
+			opacity: 0;
+		}
+
+		.ng-enter-active {
+			opacity: 1;
+		}
+
+
+		.ng-leave {
+			-webkit-transition: 0.5s;
+			transition: 1s;
+		}
+
+		.ng-leave-active {
+			opacity: 0;
+		}
+	</style>
+</head>
+
+<body ng-controller='ctrl' ng-keypress='keypress($event);' style="background-color:black">
+	<div class="container" style="width:30%">
+		<h1> {{hello}}</h1>
+		<div class="text-center">
+			<img ng-src="img/{{Questions[0].thum}}" />
+		</div>
+		<br/>
+		<br/>
+		<br/>
+		<div class="text-center">
+			<img ng-src="img/{{elements[0]}}" class='img img-circle ' />
+			<img ng-src="img/{{elements[1]}}" class='img img-circle' />
+			<img ng-src="img/{{elements[2]}}" class='img img-circle' />
+		</div>
+		<br/>
+		<br/>
+		<div class="row  text-center">
+			<div class="col-sm-2 col-sm-offset-1 thumbnail" style="width:80px;height:80px">
+				<img src='img/ice.png' />
+			</div>
+			<div class="col-sm-2 thumbnail" style="width:80px;height:80px">
+				<img src='img/light.png' />
+			</div>
+			<div class="col-sm-2 thumbnail" style="width:80px;height:80px">
+				<img src='img/fire.png' />
+			</div>
+			<div class="col-sm-2 thumbnail" style="width:80px;height:80px">
+				<img ng-src="img/{{magics[0].thum}}" />
+			</div>
+			<div class="col-sm-2 thumbnail" style="width:80px;height:80px">
+				<img ng-src="img/{{magics[1].thum}}" />
+			</div>
+			<div class="col-sm-2 thumbnail" style="width:80px;height:80px">
+				<img src='img/invoke.png' />
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
