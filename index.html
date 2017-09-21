@@ -29,10 +29,30 @@
 		.ng-leave-active {
 			opacity: 0;
 		}
+
+		.qr{
+			position: absolute;
+			right: 20px;
+			bottom: 20px;
+			width: 400px;
+			height: 400px;
+			/* border: 1px solid red; */
+			text-align: right;
+
+		}
+		.qr img{
+			width: 80%;
+			height: 100%;
+			text-align: right;
+			opacity: 0.2;
+		}
+		.qr img:hover{
+			opacity: 0.8;
+		}
 	</style>
 </head>
 
-<body ng-controller='ctrl' ng-keypress='keypress($event);' style="background-color:black">
+<body ng-controller='ctrl' ng-keypress='keypress($event);' style="background:linear-gradient(60deg, black, white)">
 	<div class="container" style="width:30%">
 		<h1> {{hello}}</h1>
 		<div class="text-center">
@@ -68,6 +88,9 @@
 				<img src='img/invoke.png' />
 			</div>
 		</div>
+	</div>
+	<div class="qr">
+		<img src="img/qr.jpg" >
 	</div>
 </body>
 
