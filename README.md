@@ -1,4 +1,4 @@
-# Dota2KaelPractice
+# Dota2-Kael-Practice
 This is a single page application for dota2ers to practise Kael switching skill
 
 # Quick Start
