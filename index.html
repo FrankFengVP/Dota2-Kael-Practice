@@ -30,7 +30,7 @@
 			opacity: 0;
 		}
 
-		.qr{
+		.qr {
 			position: absolute;
 			right: 20px;
 			bottom: 20px;
@@ -38,16 +38,25 @@
 			height: 400px;
 			/* border: 1px solid red; */
 			text-align: right;
-
 		}
-		.qr img{
+
+		.qr img {
 			width: 80%;
 			height: 100%;
 			text-align: right;
 			opacity: 0.2;
+			-webkit-transition: opacity 1s ease-out;
+			-moz-transition: opacity 1s ease-out;
+			-o-transition: opacity 1s ease-out;
+			transition: opacity 1s ease-out;
 		}
-		.qr img:hover{
+
+		.qr img:hover {
 			opacity: 0.8;
+			-webkit-transition: opacity 1s ease-out;
+			-moz-transition: opacity 1s ease-out;
+			-o-transition: opacity 1s ease-out;
+			transition: opacity 1s ease-out;
 		}
 	</style>
 </head>
@@ -90,7 +99,7 @@
 		</div>
 	</div>
 	<div class="qr">
-		<img src="img/qr.jpg" >
+		<img src="img/qr.jpg">
 	</div>
 </body>
 
