@@ -1,14 +1,15 @@
 <html ng-app='app'>
 
 <head>
-	<link rel="stylesheet" href="content/bootstrap.min.css">
-	<link rel="stylesheet" href="content/bootstrap-theme.min.css">
+	<link href="https://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" rel="stylesheet">
 	<link rel="icon" href="img/ico64.ico" type="image/x-icon" />
-	<script src="content/jquery.min.js"></script>
-	<script src="content/bootstrap.min.js"></script>
-	<script src="content/angular.js"></script>
-	<script src="content/angular-animate.min.js"></script>
+	<script src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src="https://cdn.bootcss.com/angular.js/1.5.0/angular.min.js"></script>
+	<script src="https://cdn.bootcss.com/angular.js/1.5.0/angular-animate.min.js"></script>
 	<script src="main.js"></script>
+	<title>卡尔在线练习</title>
 	<style>
 		.ng-enter {
 			-webkit-transition: 0.5s;
@@ -63,7 +64,8 @@
 
 <body ng-controller='ctrl' ng-keypress='keypress($event);' style="background:linear-gradient(60deg, black, white)">
 	<div class="container" style="width:30%">
-		<h1> {{hello}}</h1>
+		<h1 style="display:inline-block;margin-top:30px 30px;"> 卡尔</h1>
+		<h3 style="display:inline-block;margin-bottom:50px;"> - 自家搭建的卡尔联系小程序，请多多关照 </h3>
 		<div class="text-center">
 			<img ng-src="img/{{Questions[0].thum}}" />
 		</div>
